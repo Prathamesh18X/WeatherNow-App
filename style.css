@@ -1,0 +1,406 @@
+/* Import Google Font - Poppins */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background: #96d3ff;
+}
+
+.cold {
+  display: flex;
+  background: #cccfd1;}
+
+.moderate {
+  background: #43b1ff;}
+
+.hot {
+  background: #f6ff96;}
+
+::selection {
+  color: #fff;
+  background: #43AFFC;
+}
+
+.wrapper {
+  width: 800px;
+  background: #fff;
+  border-radius: 7px;
+  box-shadow: 7px 7px 20px rgba(0, 0, 0, 0.05);
+}
+
+.wrapper header {
+  display: flex;
+  font-size: 21px;
+  font-weight: 500;
+  color: #43AFFC;
+  padding: 16px 15px;
+  align-items: center;
+  border-bottom: 1px solid #ccc;
+}
+
+header .backarrow {
+  font-size: 0em;
+  cursor: pointer;
+  margin-right: 40px;
+}
+
+header i {
+  font-size: 1.5em;
+  margin-left: 10px;
+}
+
+.wrapper.active header i {
+  margin-left: 5px;
+  font-size: 30px;
+}
+
+.wrapper .input-part {
+  padding: 50px 100px;
+}
+
+.wrapper.active .input-part {
+  display: none;
+}
+
+.input-part .info-txt {
+  display: none;
+  font-size: 17px;
+  text-align: center;
+  padding: 12px 10px;
+  border-radius: 7px;
+  margin-bottom: 15px;
+}
+
+.input-part .info-txt.error {
+  color: #721c24;
+  display: block;
+  background: #f8d7da;
+  border: 1px solid #ffabb3;
+}
+
+.input-part .info-txt.pending {
+  color: #0c6035;
+  display: block;
+  background: #9edcc6;
+  border: 1px solid #a4d6b8;
+}
+
+.input-part :where(input) {
+  width: 100%;
+  height: 55px;
+  border: none;
+  outline: none;
+  font-size: 18px;
+  border-radius: 7px;
+}
+
+.input-part :where(button) {
+  width: 25%;
+  height: 55px;
+  border: none;
+  outline: none;
+  font-size: 30px;
+  border-radius: 10px;
+}
+
+.input-part input {
+  text-align: center;
+  padding: 0 15px;
+  border: 1px solid #ccc;
+}
+
+.input-part input:is(:focus, :valid) {
+  border: 2px solid #43AFFC;
+}
+
+.input-part input::placeholder {
+  color: #bfbfbf;
+}
+
+.input-part .separator {
+  height: 1px;
+  width: 100%;
+  margin: 25px 0;
+  background: #ccc;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.separator::before {
+  content: "or";
+  color: #b3b3b3;
+  font-size: 19px;
+  padding: 0 15px;
+  background: #fff;
+}
+
+.input-part button {
+  color: #fff;
+  cursor: pointer;
+  background: #43AFFC;
+  transition: 0.3s ease;
+}
+
+.input-part button:hover {
+  background: #078ae8;
+}
+
+h3 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+h3 button {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+h3 h6 {
+  padding: 10px;
+}
+.cold-logo{
+  color:#828282 ;
+}
+.moderate-logo{
+  color:#5DBBFF ;
+}
+.hot-logo{
+  color: #ffa15d;
+}
+.weather-part {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 20px;
+  overflow: hidden;
+  margin: 40px;
+}
+
+.card1 {
+  display: none;
+  padding: 25px 0 25px 50px;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.wrapper.active .card1 {
+  display: flex;
+}
+
+.card1 img {
+  max-width: 125px;
+}
+
+.card1 .temp {
+  display: flex;
+  font-weight: 500;
+  font-size: 72px;
+}
+
+.card1 .temp .numb {
+  font-weight: 600;
+}
+
+.card1 .card2 .temp .deg {
+  font-size: 40px;
+  display: block;
+  margin: 10px 5px 0 0;
+}
+
+.card1 .weather {
+  font-size: 21px;
+  text-align: center;
+  margin: -5px 20px 15px;
+}
+
+.card1 .location {
+  display: flex;
+  font-size: 19px;
+  padding: 0 20px;
+  text-align: center;
+  margin-bottom: 30px;
+  align-items: flex-start;
+}
+
+.location i {
+  font-size: 22px;
+  margin: 4px 5px 0 0;
+}
+
+.column {
+  display: flex;
+  width: 100%;
+  font-size: 11px;
+  font-weight: 600;
+  padding: 15px 0;
+  align-items: center;
+  justify-content: center;
+}
+
+.icons-cold{
+  color: #828282;
+  font-size: 30px;
+  padding-left: 10px;
+}
+.icons-moderate{
+  color: #5DBBFF;
+  font-size: 30px;
+  padding-left: 10px;
+}
+.icons-hot{
+  color: #ffa15d;
+  font-size: 30px;
+  padding-left: 10px;
+}
+.column {
+  font-size: 30px;
+  padding-left: 10px;
+}
+
+.feels {
+  font-size: 40px;
+  font-weight: 900;
+}
+
+.feels i {
+  font-size: 52px;
+}
+
+.column .details {
+  margin-left: 3px;
+}
+
+.details .temp .deg {
+  margin: 0;
+  font-size: 17px;
+  padding: 0 2px 0 1px;
+}
+
+.column .details p {
+  font-size: 14px;
+  margin-top: -6px;
+}
+
+.main .cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  margin-top: 50px;
+}
+
+.cards {
+  width: 100px;
+  height: 130px;
+  color: #1a1a1a;
+  background-color: #fff;
+  text-align: center;
+  padding: 10px 0;
+  flex-direction: column;
+}
+
+.card2 {
+  display: none;
+  border-radius: 20px;
+  color: #1a1a1a;
+  background-color: #fff;
+}
+
+.wrapper.active .card2 {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
+  justify-content: center;
+  margin: 0 25px;
+  gap: 20px;
+}
+
+.weather {
+  font-weight: 900;
+  font-size: 36px;
+}
+
+@media (max-width: 900px) {
+  .wrapper {
+    width: 90%;
+  }
+
+  .input-part {
+    padding: 50px;
+  }
+
+  .card1 {
+    padding: 25px 0 25px 30px;
+  }
+
+  .card1 img {
+    max-width: 80px;
+  }
+}
+
+@media (max-width: 600px) {
+  .wrapper .active{
+    width: 80%;
+    display: flex;
+    flex-direction:column;
+  }
+
+  h3{
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .wrapper .input-part {
+    padding: 25px;
+  }
+
+  .input-part :where(button) {
+    width: 100%;
+    height: 55px;
+    border: none;
+    outline: none;
+    font-size: 30px;
+    border-radius: 10px;
+  }
+
+  .weather-part {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border-radius: 20px;
+    overflow: hidden;
+    margin: 40px;
+  }
+
+  .weather{
+    font-size: 24px;
+  }
+
+  .feels{
+    font-size: 20px;
+  }
+
+  .card1 {
+    padding: 25px 0 25px 20px;
+  }
+
+  .card1 img {
+    max-width: 200px;
+  }
+}

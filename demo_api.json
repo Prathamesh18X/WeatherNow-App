@@ -1,0 +1,48 @@
+{
+    "coord": {
+      "lon": 73,
+      "lat": 21.6
+    },
+    "weather": [
+      {
+        "id": 501,
+        "main": "Rain",
+        "description": "moderate rain",
+        "icon": "10d"
+      }
+    ],
+    "base": "stations",
+    "main": {
+      "temp": 26.91,
+      "feels_like": 30.09,
+      "temp_min": 26.91,
+      "temp_max": 26.91,
+      "pressure": 1003,
+      "humidity": 86,
+      "sea_level": 1003,
+      "grnd_level": 1000
+    },
+    "visibility": 10000,
+    "wind": {
+      "speed": 5.1,
+      "deg": 211,
+      "gust": 9.33
+    },
+    "rain": {
+      "1h": 1.78
+    },
+    "clouds": {
+      "all": 100
+    },
+    "dt": 1688042129,
+    "sys": {
+      "country": "IN",
+      "sunrise": 1687998485,
+      "sunset": 1688046861
+    },
+    "timezone": 19800,
+    "id": 1278553,
+    "name": "DemoCity",
+    "cod": 200
+  }
+  

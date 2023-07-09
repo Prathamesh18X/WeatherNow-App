@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<!-- Coding By CodingNepal - youtube.com/codingnepal -->
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Weather App in JavaScript | CodingNepal</title>
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>  </head>
+  <body class="body">
+    <div class="wrapper">
+      <header>
+        <i class="fa-solid fa-arrow-left backarrow"></i> 
+          <p class="logo">WeatherNow App</p>
+        <i class="fa-solid fa-cloud"></i>
+      </header>
+      <section class="input-part">
+        <h3>Welcome,</h3>
+        <p class="info-txt"></p>
+        <div class="content">
+          <input type="text" spellcheck="false" placeholder="Enter city..." required>
+          <div class="separator"></div>
+          <h3> Get your Live Location weather
+          <button><h6>Live</h6>
+            <i class="fa-solid fa-earth-asia fa-beat"></i>
+          </button>
+          </h3>
+        </div>
+      </section>
+      <div class="weather-part">
+        <div class="card1">
+        <img src="" alt="Weather Icon">
+        <div class="temp">
+          <span class="numb">_</span>
+          <span class="deg">°</span>C
+        </div>
+        <div class="time">
+          <span id="time"></span>
+          <span id="day"></span>
+        </div>
+        <div class="location">
+          <i class="fa-solid fa-regular fa-location-dot"></i>
+          <span>_, _</span>
+        </div>
+      </div>
+        <div class="card2">
+          <div class="weather">_ _</div>
+          <div class="column feels">
+            <i class="fa-solid fa-temperature-half fa-bounce"></i>
+            <div class="details">
+              <p>Feels like</p>
+              <div class="temp">
+                <span class="numb-2">_</span>
+                °C
+              </div>
+            </div>
+          </div>
+          <div class="column humidity">
+            <i class="fa-solid fa-droplet"></i>
+            <div class="details">
+              <p>Humidity</p>
+              <span>_</span>
+            </div>
+          </div>
+          <div class=" column visibility">
+            <i class="fa-solid fa-eye"></i>
+            <div class="details">
+              <p>Visibility</p>
+              <span>_</span>
+            </div>
+          </div>
+          <div class=" column speed">
+            <i class="fa-solid fa-wind"></i>
+            <div class="details">
+              <p>Wind Speed</p>
+              <span>_</span>
+            </div>
+          </div>
+          <div class=" column dir">
+            <i class="fa-solid fa-signs-post"></i>
+            <div class="details">
+              <p>Direction</p>
+              <span>_</span>
+            </div>
+          </div>
+          <div class=" column rise">
+            <i class="fa-solid fa-sun"></i>
+            <div class="details">
+              <p>Sunrise</p>
+              <span>_</span>
+            </div>
+          </div>
+          <div class=" column set">
+            <i class="fa-solid fa-moon"></i>
+            <div class="details">
+              <p>Sunset</p>
+              <span>_</span>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
