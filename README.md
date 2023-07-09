@@ -1,9 +1,10 @@
 # WeatherNow-App
 Stay updated of the Weather with my WeatherNow-App, convenient to provide the live weather around you.
 
-get Access to my App using URL : 
+# App Link 
 https://prathamesh18x.github.io/WeatherNow-App/
 
+# Screenshots
 initial page :
 ![image](https://github.com/Prathamesh18X/WeatherNow-App/assets/109477390/d5d2ac51-d206-4815-ba64-38254f744054)
 
