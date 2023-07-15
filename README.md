@@ -2,7 +2,7 @@
 Stay updated of the Weather with my WeatherNow-App, convenient to provide the live weather around you.
 
 # App Link 
-https://prathamesh18x.github.io/WeatherNow-App/
+To Go Live [ClickHere](https://prathamesh18x.github.io/WeatherNow-App/)👈
 
 # Screenshots
 initial page :
